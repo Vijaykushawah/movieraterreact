@@ -21,7 +21,7 @@ const highlightRate = high => evt => {
 }
 
 const rateClicked = rate => evt => {
-  fetch(`http://movierater.pythonanywhere.com/api/movies/${mov.id}/rate_movie/`,{
+  fetch(`https://movierater.pythonanywhere.com/api/movies/${mov.id}/rate_movie/`,{
   method:'POST',
   headers:{
     'Content-Type':'application/json',
@@ -40,7 +40,7 @@ const rateClicked = rate => evt => {
 
 const getDetails = () => {
 
-  fetch(`http://movierater.pythonanywhere.com/api/movies/${mov.id}/`,{
+  fetch(`https://movierater.pythonanywhere.com/api/movies/${mov.id}/`,{
   method:'GET',
   headers:{
     'Content-Type':'application/json',

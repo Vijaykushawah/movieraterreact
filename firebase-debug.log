@@ -1,0 +1,44 @@
+[debug] [2020-11-05T18:45:10.535Z] ----------------------------------------------------------------------
+[debug] [2020-11-05T18:45:10.547Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-05T18:45:10.549Z] CLI Version:   8.15.0
+[debug] [2020-11-05T18:45:10.549Z] Platform:      win32
+[debug] [2020-11-05T18:45:10.550Z] Node Version:  v14.15.0
+[debug] [2020-11-05T18:45:10.554Z] Time:          Fri Nov 06 2020 00:15:10 GMT+0530 (India Standard Time)
+[debug] [2020-11-05T18:45:10.556Z] ----------------------------------------------------------------------
+[debug] [2020-11-05T18:45:10.556Z] 
+[debug] [2020-11-05T18:45:10.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-05T18:45:10.592Z] > authorizing via signed-in user
+[debug] [2020-11-05T18:45:10.593Z] [iam] checking project movierater-845a8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-05T18:45:10.608Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/movierater-845a8:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-05T18:45:12.503Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Nov 2020 18:45:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1421","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-05T18:45:12.513Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/movierater-845a8  
+ 
+[debug] [2020-11-05T18:45:13.409Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Nov 2020 18:45:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'movierater-845a8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-05T18:45:13.433Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/movierater-845a8/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-05T18:45:15.661Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Nov 2020 18:45:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[movierater-845a8]: beginning deploy... 
+[debug] [2020-11-05T18:45:16.054Z] Error: EPERM: operation not permitted, scandir 'C:/Users/vijay kushawah/Desktop/movierater/build/static/css'
+    at Object.readdirSync (fs.js:1021:3)
+    at GlobSync._readdir (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:30:23)
+    at module.exports (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:66:12)
+    at _chain (C:\Users\vijay kushawah\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+[error] 
+[error] Error: An unexpected error has occurred.

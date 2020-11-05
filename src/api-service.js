@@ -2,7 +2,7 @@
 export class API{
   static updateMovie(mov_id,body,token){
 
-  return  fetch(`http://movierater.pythonanywhere.com/api/movies/${mov_id}/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/api/movies/${mov_id}/`,{
     method:'PUT',
     headers:{
       'Content-Type':'application/json',
@@ -15,7 +15,7 @@ export class API{
 
   static createMovie(body,token){
 
-  return  fetch(`http://movierater.pythonanywhere.com/api/movies/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/api/movies/`,{
     method:'POST',
     headers:{
 
@@ -30,7 +30,7 @@ export class API{
 
   static removeMovie(mov_id,token){
 
-  return  fetch(`http://movierater.pythonanywhere.com/api/movies/${mov_id}/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/api/movies/${mov_id}/`,{
     method:'DELETE',
     headers:{
       'Content-Type':'application/json',
@@ -43,7 +43,7 @@ export class API{
 
   static loginUser(body){
 
-  return  fetch(`http://movierater.pythonanywhere.com/auth/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/auth/`,{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
@@ -55,7 +55,7 @@ export class API{
 
   static registerUser(body){
 
-  return  fetch(`http://movierater.pythonanywhere.com/api/users/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/api/users/`,{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
@@ -69,7 +69,7 @@ export class API{
 
   static getMovies(token){
 
-  return  fetch(`http://movierater.pythonanywhere.com/api/movies/`,{
+  return  fetch(`https://movierater.pythonanywhere.com/api/movies/`,{
     method:'GET',
     headers:{
       'Content-Type':'application/json',
