@@ -30,7 +30,7 @@ useEffect( () => {
 
 
 useEffect(()=>{
-  fetch("http://127.0.0.1:8000/api/movies/",{
+  fetch("http://movierater.pythonanywhere.com/api/movies/",{
   method:'GET',
   headers:{
     'Content-Type':'application/json',
